@@ -53,7 +53,7 @@
 }
 @font-face {
   font-family: tanishq;
-  src: url("../public/Another\ Danger\ Slanted\ -\ Demo.otf");
+  src: url("/Another Danger Slanted - Demo.otf");
 }
 .logo-section {
   margin-top: 3rem;
@@ -85,7 +85,7 @@ span {
 }
 @font-face {
   font-family: saxena;
-  src: url("../public/NCL\ Bujho\ Orgnist\ -\ Regular.ttf");
+  src: url("/NCL Bujho Orgnist - Regular.ttf");
 }
 h1 {
   margin-top: 3rem;
@@ -93,4 +93,5 @@ h1 {
   font-size: 3rem;
   letter-spacing: 0.5rem;
   text-shadow: 0 0 10px black;
+  text-align: center;
 }
