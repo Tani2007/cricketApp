@@ -11,6 +11,7 @@ const Cricket = ({ data }) => {
         {data.map((curElem) => {
           return (
             <div className="playerstat">
+              <h2>{curElem.name}</h2>
               <div className="teamData">
                 {curElem.teams.map((curData) => {
                   return <p>{curData}</p>;
@@ -32,6 +33,7 @@ const Cricket = ({ data }) => {
                   );
                 })}
               </div>
+              <h3>{curElem.status}</h3>
             </div>
           );
         })}
