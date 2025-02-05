@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .body {
-  background-color: hsl(0, 0%, 90%);
+  background-color: hsl(0, 0%, 50%);
   min-height: 100vh;
   display: grid;
   place-items: center;
@@ -16,13 +16,12 @@ img {
 .grid {
   width: 80%;
   margin: 100px auto;
-  background-color: grey;
+  background-color: hsl(0, 0%, 50%);
   display: grid;
-  border-radius: 10px;
+
   padding: 10px;
   grid-template-rows: repeat(auto-fill, 300px);
   row-gap: 50px;
-  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.514);
 }
 @media (width<1200px) {
   .grid {
@@ -31,8 +30,9 @@ img {
 }
 .news-container {
   background-color: hsl(0, 0%, 80%);
+  box-shadow: 0 0 15px 15px rgba(8, 5, 5, 0.678);
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 4px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
