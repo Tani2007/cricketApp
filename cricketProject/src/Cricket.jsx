@@ -1,12 +1,12 @@
 import React from "react";
-
+import "./App.css";
 const Cricket = ({ data }) => {
   return (
     <div className="back">
       <div class="logo-section">
         <img class="logo" src="logo.png" alt="" /> <span>CRICBUZZ</span>
       </div>
-      <h1>Live Matches</h1>
+      <h1 className="heading-1">Live Matches</h1>
       <div className="container">
         {data.map((curElem) => {
           return (
