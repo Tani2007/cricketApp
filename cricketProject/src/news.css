@@ -14,7 +14,7 @@ img {
   height: 200px;
 }
 .grid {
-  width: 60%;
+  width: 80%;
   margin: 100px auto;
   background-color: grey;
   display: grid;
@@ -40,7 +40,7 @@ img {
   align-items: center;
 }
 input {
-  width: 40%;
+  width: 80%;
   height: 40px;
   letter-spacing: 0.1rem;
   text-align: center;
