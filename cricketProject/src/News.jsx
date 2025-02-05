@@ -38,7 +38,7 @@ export function News() {
       <input
         type="text"
         value={null}
-        placeholder="search for latest news(e.g-mahakumbh)"
+        placeholder="search for latest news(mahakumbh)"
         onChange={handleChange}
       />
       <div className="grid">
