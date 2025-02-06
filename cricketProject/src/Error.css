@@ -14,8 +14,8 @@
   align-items: center;
 }
 .imageError {
-  width: 400px;
-  height: 400px;
+  width: 20rem;
+  height: 20rem;
   box-shadow: 0 0 50px 10px rgb(30, 235, 30);
   filter: brightness(50%);
   margin-bottom: 30px;
@@ -29,7 +29,7 @@
   margin: auto;
   text-align: center;
   font-weight: 800;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.1px;
 }
 
 .errorGoBack {
@@ -48,4 +48,12 @@
   font-family: tanishq-error;
   font-weight: 800;
   font-size: 1rem;
+}
+@media (width<1200) {
+  .errorPage {
+    flex-wrap: wrap;
+  }
+  .errorContainer {
+    font-size: 0.001px;
+  }
 }
