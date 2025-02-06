@@ -2,16 +2,16 @@ import { useEffect, useState } from "react";
 import "./news.css";
 export function News() {
   const [news, setNews] = useState([]);
-  const [input, setInput] = useState("mahakumbh");
+  const [input, setInput] = useState("modi");
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     fetch(
-      `https://newsdata.io/api/1/news?apikey=pub_67684ca2a34e20b9f2cc98c8608f8811e40b7&q=${input}`
+      `https://api.worldnewsapi.com/search-news?text=${input}&language=en&earliest-publish-date=2025-02-05&api-key=573b95fdcd8b48cc85e7da5ed41d7b17`
     )
       .then((res) => res.json())
       .then((data) => {
-        console.log(data.results);
-        setNews(data.results);
+        console.log(data.news);
+        setNews(data.news);
         setLoading(false);
       })
       .catch((err) => {
@@ -20,8 +20,11 @@ export function News() {
   }, [input]);
 
   function handleChange(e) {
-    setInput(e.target.value);
-    console.log(e.target.value);
+    let timerOut = setTimeout(() => {
+      setInput(e.target.value);
+      console.log(e.target.value);
+    }, 3000);
+    return () => clearTimeout(timerOut);
   }
 
   if (loading) {
@@ -36,6 +39,7 @@ export function News() {
     <div className="body">
       <h1 className="newsHeading">Newz hub</h1>
       <input
+        className="inputNews"
         type="text"
         value={null}
         placeholder="search for latest news(mahakumbh)"
@@ -44,11 +48,11 @@ export function News() {
       <div className="grid">
         {news.map((curNews) => {
           return (
-            <div key={curNews.article_id} className="news-container">
-              <p>{curNews.title}</p>
-              <img src={curNews.image_url} alt="news.image" />
-              <p>{}</p>
-              <a href={curNews.link} target="_blank">
+            <div key={curNews.id} className="news-container">
+              <p className="news-title">{curNews.title}</p>
+              <img src={curNews.image} alt="news.image" />
+              <p>{curNews.text}</p>
+              <a href={curNews.url} target="_blank">
                 Read More
               </a>
             </div>
