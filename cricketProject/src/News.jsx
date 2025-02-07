@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./news.css";
+import Error from "./Error";
 export function News() {
   const [news, setNews] = useState([]);
   const [input, setInput] = useState("modi");
@@ -15,7 +16,7 @@ export function News() {
         setLoading(false);
       })
       .catch((err) => {
-        console.log("hey");
+        setLoading(false);
       });
   }, [input]);
 
