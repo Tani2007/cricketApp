@@ -15,11 +15,9 @@
 }
 .container {
   border-radius: 10px 5px 10px 5px;
-  background-color: black;
+  background-color: hsl(0, 0%, 90%);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 25px;
-  box-shadow: 0 0 10px 10px red;
-  width: 80%;
-  margin: 100px auto;
+  margin: 50px auto;
   display: grid;
   gap: 50px;
   grid-template-rows: repeat(2, 250px);
@@ -33,9 +31,7 @@
   }
 }
 .playerstat {
-  background-image: linear-gradient(to top right, #fccb90, #d57eeb);
-  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
-    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  background-color: hsl(0, 0%, 50%);
   display: grid;
   place-items: center;
 }
@@ -75,7 +71,7 @@ input {
 span {
   color: black;
   text-shadow: 0 0 10px rgb(0, 255, 0);
-  font-size: 2rem;
+  font-size: 4rem;
   letter-spacing: 1rem;
 }
 .overData {
@@ -85,14 +81,14 @@ span {
 }
 @font-face {
   font-family: saxena;
-  src: url("/NCL Bujho Orgnist - Regular.ttf");
+  src: url("../fonts/Melted\ Monster.ttf");
 }
 .heading-1 {
-  margin-top: 3rem;
+  margin-top: 1rem;
   font-family: saxena;
-  font-size: 3rem;
+  font-size: 4rem;
   letter-spacing: 0.5rem;
-  text-shadow: 0 0 10px black;
+  text-shadow: 0 0 10px red;
   text-align: center;
 }
 h2 {
