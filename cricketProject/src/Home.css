@@ -111,6 +111,6 @@ button {
 }
 @media (width<1200px) {
   .cricket-home {
-    width: 80%;
+    width: 100%;
   }
 }
