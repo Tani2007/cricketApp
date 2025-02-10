@@ -92,3 +92,25 @@ button {
     }
   }
 }
+.cricket-home {
+  width: 60%;
+  height: 100vh;
+  margin: auto;
+  background-image: url("../fonts/cricketProjectImg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+}
+.outside-cricket-home {
+  background-image: linear-gradient(
+    to right,
+    rgba(235, 59, 88, 0.568),
+    rgba(128, 0, 128, 0.589),
+    rgba(30, 233, 57, 0.664),
+    rgba(20, 205, 238, 0.582)
+  );
+}
+@media (width<1200px) {
+  .cricket-home {
+    width: 80%;
+  }
+}
